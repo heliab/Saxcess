@@ -1,0 +1,25 @@
+var x = document.createElement("INPUT");
+x.setAttribute("type", "radio");
+
+
+
+-------------
+var L = navigator.plugins.length;
+
+document.write(
+  L.toString() + " Plugin(s)<br>" +
+  "Name | Filename | description<br>"
+);
+
+for(var i = 0; i < L; i++) {
+  document.write(
+    navigator.plugins[i].name +
+    " | " +
+    navigator.plugins[i].filename +
+    " | " +
+    navigator.plugins[i].description +
+    " | " +
+    navigator.plugins[i].version +
+    "<br>"
+  );
+}
